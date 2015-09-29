@@ -3,6 +3,7 @@ Enhance your website with **six** stylish transformicons using SCSS and CSS.
 
 ### Getting Started
 
+#### Download and Setup
 First, initialize your variable settings in the `variables.scss` file.
 
 ```sass
