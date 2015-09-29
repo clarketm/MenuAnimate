@@ -14,7 +14,7 @@ Next, transpile the `menu-animate.scss` to generate your css file.
 
 Lastly, add the generated `menu-animate.css` file to the `<head>` of your html document.
 
-##### Install with Bower
+#### Install with Bower
 ```shell
 $ bower install menuanimate.scss
 ```
