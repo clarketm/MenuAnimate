@@ -31,10 +31,10 @@ Then, add one of the **five** modification classes below to set your icon type. 
 | `.rarr`  | right arrow |
 | `.uarr`  |   up arrow  |
 
-*_default_ if no additional modification class is added.
+*the _default_ icon if no additional modification class is added.
 
 ### Live Demo 
 A live, interactive demo can be found here:
-##### [www.clarketravis.com](http://www.clarketravis.com/#transformicons)
+##### [www.clarketravis.com](http://www.clarketravis.com/tableexport/#transformicons)
 
 
