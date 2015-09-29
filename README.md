@@ -1,5 +1,5 @@
 # MenuAnimate
-Enhance your website with **six** stylish transformicons using SCSS and CSS
+Enhance your website with **six** stylish transformicons using SCSS and CSS.
 
 ### Getting Started
 First, initialize your variable settings in the `variables.scss` file.
