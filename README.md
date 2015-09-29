@@ -31,7 +31,7 @@ Then, add one of the **five** modification classes below to set your icon type. 
 | `.rarr`  | right arrow |
 | `.uarr`  |   up arrow  |
 
-*&nbsp;_default_ icon if no additional modification class is added.
+*&nbsp;_default_ icon - when no additional modification class is added).
 
 ### Live Demo 
 A live, interactive demo can be found here:
