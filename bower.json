@@ -7,15 +7,14 @@
   "description": "Enhance your website with six stylish transformicons using SCSS and CSS.",
   "main": "dist/scss/menu-animate.scss",
   "keywords": [
-    "querytag",
-    "query",
-    "tag",
-    "isotope",
-    "sort",
-    "cse",
-    "custom search",
-    "google custom search",
-    "search"
+    "menuanimate",
+    "menu",
+    "animate",
+    "transformicon",
+    "scss",
+    "three-bars",
+    "navicon",
+    "icon"
   ],
   "dependencies": {
   },
