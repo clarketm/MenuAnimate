@@ -2,6 +2,12 @@
 Enhance your website with **six** stylish transformicons using SCSS and CSS.
 
 ### Getting Started
+
+#### Install with Bower
+```shell
+$ bower install menuanimate.scss
+```
+
 First, initialize your variable settings in the `variables.scss` file.
 
 ```sass
