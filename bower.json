@@ -1,11 +1,11 @@
 {
   "name": "menuanimate.scss",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     "clarketm <travis.m.clarke@gmail.com>"
   ],
   "description": "Enhance your website with six stylish transformicons using SCSS and CSS.",
-  "main": "dist/scss/menu-animate.scss",
+  "main": "dist/js/menu-animate.js",
   "keywords": [
     "menuanimate",
     "menu",

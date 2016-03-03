@@ -1,0 +1,38 @@
+{
+  "name": "menuanimate.scss",
+  "version": "1.1.0",
+  "description": "Enhance your website with six stylish transformicons using SCSS and CSS.",
+  "main": "gulp.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarketm/MenuAnimate.git"
+  },
+  "keywords": [
+    "menuanimate",
+    "menu",
+    "animate",
+    "transformicon",
+    "scss",
+    "three-bars",
+    "navicon",
+    "icon"
+  ],
+  "author": "clarketm <travis.m.clarke@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarketm/MenuAnimate/issues"
+  },
+  "homepage": "http://www.clarketravis.com",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-filter": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifycss": "^1.0.6"
+  }
+}

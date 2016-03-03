@@ -1,47 +1,104 @@
 # MenuAnimate
 Enhance your website with **six** stylish transformicons using SCSS and CSS.
 
-### Getting Started
+## Getting Started
 
-#### Download and Setup
-First, initialize your variable settings in the `variables.scss` file.
+### Download and Setup
+First, initialize your variable settings in the `variables.scss` file or simply use the defaults.
 
 ```sass
-$duration: .5s;         // animation duration 
-$toggled-size : .75;    // size adjustment factor
-$content-bg : #c9302c;  // icon color
+/****** DEFAULTS ******/
+
+/* sizes */
+$width: 1.5em;
+$thickness: .3125em;
+$spacing: .525em;
+$border-radius: 1.5em;
+
+/* animation */
+$toggle-factor: .75;
+$hover-factor: 1.20;
+$duration: .5s;
+
+/* theme */
+$background: #c9302c;
+$opacity: 0.8;
+$hover-opacity: 1;
+
+/* position */
+$top: 10px;
+$right: 15px;
+$bottom: auto;
+$left: auto;
 ```
-Next, transpile the `menu-animate.scss` to generate your css file.
+Next, transpile the `menu-animate.scss` to generate your css file and add the generated `menu-animate.css` file to the `<head>` of your html document.
 
-Lastly, add the generated `menu-animate.css` file to the `<head>` of your html document.
+Lastly, add the `menu-animate.js` file before the closing `<body>` of your html document.
 
-#### Install with Bower
+### Install with Bower
 ```shell
 $ bower install menuanimate.scss
 ```
 
-### Usage
+## Usage
+
+### HTML
 Add the following html to your webpage where you would like your icon to appear.
 
 ```html
 <button class="navicon"></button>
+
+<!-- OR ... use your own selector [id or class] -->
+
+<button id="my-selector"></button>
+
 ```
 
-Then, add one of the **five** modification classes below to set your icon type. Each icon starts as a three-bars icon and transforms to the icon type of it's respective modification class. 
+### JavaScript
 
-|   Class  |    Icon     |
+To use this plugin, just call:
+```js
+/* no args */
+MenuAnimate();                             // selector will default to ".navicon"
+```
+
+... choose your own selector [id or class]:
+```js
+/* selector arg */
+MenuAnimate("#my-selector");               // selector will be "#my-selector"
+```
+
+... choose an icon type modifier:
+```js
+/* icon arg */
+MenuAnimate("x");                          // selector will default to ".navicon"
+                                                // icon will be "x"
+```
+
+... choose both a selector and icon type modifier
+```js                                               
+/* icon & selector args */
+MenuAnimate("plus", ".my-selector");       // argument order doesn't matter
+MenuAnimate(".my-selector", "plus");       // ... same as above
+```
+
+### Icons
+
+Customize your icon by passing in one of the **six** icon type modifiers. Each icon starts as a three-bars icon and transforms to the specified icon type. 
+
+|   Type   | Description |
 | :------: |   :------:  |
-| _none_ * |    line     |
-|   `.x`   |      x      |
-| `.plus`  |     plus    |
-| `.larr`  | left arrow  |
-| `.rarr`  | right arrow |
-| `.uarr`  |   up arrow  |
+| `line` * |    line     |
+|   `x`    |      x      |
+| `plus`   |     plus    |
+| `larr`   | left arrow  |
+| `rarr`   | right arrow |
+| `uarr`   |   up arrow  |
 
-*&nbsp;_default_ icon &mdash; when no additional modification class is added.
+*&nbsp;_default_ &mdash; when no additional modification class is added.
 
 ### Live Demo 
 A live, interactive demo can be found here:
-##### [www.clarketravis.com](http://www.clarketravis.com/tableexport/#transformicons)
+##### [www.clarketravis.com](http://www.clarketravis.com/querytag/#transformicons)
 
 
