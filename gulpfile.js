@@ -1,25 +1,22 @@
-var gulp = require('gulp');
-
-var rename = require("gulp-rename");
-var filter = require("gulp-filter");
-
-var sass = require('gulp-sass');
-var css = require('gulp-uglifycss');
-var js = require('gulp-uglify');
+var gulp = require('gulp'),
+    rename = require("gulp-rename"),
+    del = require('del'),
+    sass = require('gulp-sass'),
+    css = require('gulp-uglifycss'),
+    js = require('gulp-uglify');
 
 
-gulp.task('sass', function() {
-    const f = filter(['**/*', '!./src/scss/**/variables.scss']);
-
-    return gulp.src('./src/scss/**/*.scss')
+gulp.task('sass', ['clean'], function () {
+    gulp.src('./src/scss/variables.scss')
+        .pipe(gulp.dest('./dist/scss/'));
+    gulp.src('./src/scss/menu-animate.scss')
         .pipe(gulp.dest('./dist/scss/'))
         .pipe(sass().on('error', sass.logError))
-        .pipe(f)
         .pipe(gulp.dest('./src/css/'))
         .pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('css', function() {
+gulp.task('css', ['clean', 'sass'], function () {
     return gulp.src('./src/css/*.css')
         .pipe(gulp.dest('./dist/css/'))
         .pipe(css())
@@ -29,8 +26,7 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./dist/css/'));
 });
 
-
-gulp.task('js', function() {
+gulp.task('js', ['clean'], function () {
     return gulp.src('./src/js/*.js')
         .pipe(gulp.dest('./dist/js/'))
         .pipe(js({output: {comments: /^!|@preserve|@license|@cc_on/i}}))
@@ -40,8 +36,13 @@ gulp.task('js', function() {
         .pipe(gulp.dest('./dist/js/'));
 
 });
+gulp.task('clean', function () {
+    return del(['dist']);
+});
 
-gulp.task('default', ['sass', 'css', 'js']);
+gulp.task('build', ['sass', 'css', 'js']);
+
+gulp.task('default', ['build']);
 
 
 
