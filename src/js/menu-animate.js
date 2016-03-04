@@ -9,40 +9,40 @@ var MenuAnimate = (function (window, undefined) {
     //// DEFAULTS
     var _container = "navicon",
         _icon = "icon",
-        _type = "line";
+        _type = "line",
 
     //// INIT
-    var init = function () {
-        var pattern = /^[#.]/,
-            type = _type,
-            selector = "." + _container;
+        init = function () {
+            var pattern = /^[#.]/,
+                type = _type,
+                selector = "." + _container;
 
-        for (var i = 0; i < arguments.length; i++) {
-            pattern.test(arguments[i]) ? selector = arguments[i] : type = arguments[i];
-        }
-        createNodes(type, selector)
-    };
+            for (var i = 0; i < arguments.length; i++) {
+                pattern.test(arguments[i]) ? selector = arguments[i] : type = arguments[i];
+            }
+            createNodes(type, selector)
+        },
 
     //// CREATE NODES
-    var createNodes = function (type, selector) {
-        var el = window.document.querySelectorAll(selector),
-            template = '<div class="' + _icon + '"></div>';
+        createNodes = function (type, selector) {
+            var el = window.document.querySelectorAll(selector),
+                template = '<div class="' + _icon + '"></div>';
 
-        for (var i = 0; i < el.length; i++) {
-            el[i].className = _container + " " + type;
-            el[i].insertAdjacentHTML('beforeend', template);
-            addHandler(el[i]);
-        }
-    };
+            for (var i = 0; i < el.length; i++) {
+                el[i].className = _container + " " + type;
+                el[i].insertAdjacentHTML('beforeend', template);
+                addHandler(el[i]);
+            }
+        },
 
     //// EVENT HANDLER
-    var addHandler = function (el) {
-        el.addEventListener("click", function (e) {
-            el.classList.toggle("open");
-        });
-    };
+        addHandler = function (el) {
+            el.addEventListener("click", function (e) {
+                el.classList.toggle("open");
+            });
+        };
 
-    return  init;
+    return init;
 
 }(window));
 
