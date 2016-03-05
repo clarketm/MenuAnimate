@@ -63,13 +63,13 @@ To use this plugin with jQuery, include both the [jQuery](https://jquery.com/) a
 
 ```js
 /* no args */
-$("nav").menuAnimate();                 // icon will default to "line"
+$("#my-selector").menuAnimate();                 // icon will default to "line"
 ```
 
 ... or choose an icon type modifier:
 ```js
 /* icon arg */
-$("nav").menuAnimate("x");              // icon will be "x"
+$("#my-selector").menuAnimate("x");              // icon will be "x"
 ```
 
 ### JavaScript (Vanilla JS)
