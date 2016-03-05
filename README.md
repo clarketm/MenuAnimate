@@ -33,10 +33,11 @@ $left: auto;
 ```
 Next, transpile the `menu-animate.scss` to generate your css file and add the generated `menu-animate.css` file to the `<head>` of your html document.
 
-Lastly, add the 
-`menu-animate.js` - *Vanilla JavaScript **OR** `jquery.menu-animate.js` - *jQuery Plugin*
+Lastly, add **one** of the following two scripts before the closing `<body>` of your html document.
+* `menu-animate.js` - *Vanilla JavaScript* 
+* `jquery.menu-animate.js` - *jQuery Plugin* __\*__
 
-script before the closing `<body>` of your html document.
+> __\*__ requires [jQuery](https://jquery.com/) (1.2.1 or higher).
 
 ### Install with Bower
 ```shell
@@ -58,7 +59,7 @@ Add the following html to your webpage where you would like your icon to appear.
 ```
 
 ### jQuery
-To use this plugin with jQuery, include the jQuery library and the `jquery.menu-animate.js` script, then simply call:
+To use this plugin with jQuery, include both the [jQuery](https://jquery.com/) and `jquery.menu-animate.js` scripts, then simply call:
 
 ```js
 /* no args */
@@ -73,7 +74,7 @@ $("nav").menuAnimate("x");              // icon will be "x"
 
 ### JavaScript (Vanilla JS)
 
-To use this plugin, include the `menu-animate.js` script, then simply call:
+To use this plugin with *only* JavaScript, include the `menu-animate.js` script, then simply call:
 ```js
 /* no args */
 MenuAnimate();                          // selector will default to ".navicon"
