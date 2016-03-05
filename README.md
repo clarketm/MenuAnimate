@@ -33,7 +33,10 @@ $left: auto;
 ```
 Next, transpile the `menu-animate.scss` to generate your css file and add the generated `menu-animate.css` file to the `<head>` of your html document.
 
-Lastly, add the `menu-animate.js` file before the closing `<body>` of your html document.
+Lastly, add the 
+`menu-animate.js` - *Vanilla JavaScript **OR** `jquery.menu-animate.js` - *jQuery Plugin*
+
+script before the closing `<body>` of your html document.
 
 ### Install with Bower
 ```shell
@@ -54,32 +57,46 @@ Add the following html to your webpage where you would like your icon to appear.
 
 ```
 
-### JavaScript
+### jQuery
+To use this plugin with jQuery, include the jQuery library and the `jquery.menu-animate.js` script, then simply call:
 
-To use this plugin, just call:
 ```js
 /* no args */
-MenuAnimate();                             // selector will default to ".navicon"
+$("nav").menuAnimate();                 // icon will default to "line"
+```
+
+... or choose an icon type modifier:
+```js
+/* icon arg */
+$("nav").menuAnimate("x");              // icon will be "x"
+```
+
+### JavaScript (Vanilla JS)
+
+To use this plugin, include the `menu-animate.js` script, then simply call:
+```js
+/* no args */
+MenuAnimate();                          // selector will default to ".navicon"
 ```
 
 ... choose your own selector [id or class]:
 ```js
 /* selector arg */
-MenuAnimate("#my-selector");               // selector will be "#my-selector"
+MenuAnimate("#my-selector");            // selector will be "#my-selector"
 ```
 
 ... choose an icon type modifier:
 ```js
 /* icon arg */
-MenuAnimate("x");                          // selector will default to ".navicon"
-                                                // icon will be "x"
+MenuAnimate("x");                       // selector will default to ".navicon"
+                                        // icon will be "x"
 ```
 
 ... choose both a selector and icon type modifier
 ```js                                               
 /* icon & selector args */
-MenuAnimate("plus", ".my-selector");       // argument order doesn't matter
-MenuAnimate(".my-selector", "plus");       // ... same as above
+MenuAnimate("plus", ".my-selector");    // argument order doesn't matter
+MenuAnimate(".my-selector", "plus");    // ... same as above
 ```
 
 ### Icons
