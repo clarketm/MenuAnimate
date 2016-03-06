@@ -1,0 +1,7 @@
+# ignore all files in the following directories
+.idea/
+*.iml
+test
+.DS_store
+index.html
+node_modules

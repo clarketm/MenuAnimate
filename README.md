@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/clarketm/MenuAnimate.svg?branch=master)](https://travis-ci.org/clarketm/MenuAnimate)
 # MenuAnimate
 Enhance your website with **six** stylish transformicons using SCSS and CSS.
 
