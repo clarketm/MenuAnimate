@@ -45,6 +45,11 @@ Lastly, add **one** of the following two scripts before the closing `<body>` of 
 $ bower install menuanimate.scss
 ```
 
+### Install with npm
+```shell
+$ npm install menuanimate
+```
+
 ## Usage
 
 ### HTML
