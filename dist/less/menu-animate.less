@@ -1,0 +1,123 @@
+/*!
+ * MenuAnimate.scss v1.1.2 (http://www.clarketravis.com)
+ * Copyright 2015 Travis Clarke
+ * Licensed under the MIT license
+ */
+@import "variables";
+
+html {
+  font-size: @base;
+}
+
+.navicon, .navicon.line {
+  font: inherit;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  position: absolute;
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  left: @left;
+  padding: 0.94rem 0.60rem;
+  transition: @duration/2;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  opacity: @opacity;
+  -webkit-appearance: unset;
+  -moz-appearance: unset;
+  appearance: unset;
+  outline: none !important;
+
+  .icon:before, .icon:after {
+    transition: @duration/2;
+  }
+
+  &:hover {
+    transition: @duration;
+    opacity: @hover-opacity;
+
+    .icon:before, .icon:after {
+      transition: @duration/2;
+    }
+
+    .icon:before {
+      top: @hover-factor*@spacing;
+    }
+    .icon:after {
+      top: -@hover-factor*@spacing;
+    }
+  }
+}
+
+.icon {
+  position: relative;
+  width: @width;
+  height: @thickness;
+  background: @background;
+  transition: @duration;
+  border-radius: @border-radius;
+
+  &:before, &:after {
+    display: block;
+    content: "";
+    width: @width;
+    height: @thickness;
+    background: @background;
+    position: absolute;
+    z-index: -1;
+    transition: @duration @duration/2;
+    border-radius: @border-radius;
+  }
+
+  &:before { top: @spacing }
+  &:after { top: -@spacing }
+}
+
+.navicon.open:not(.steps) .icon:before,
+.navicon.open:not(.steps) .icon:after {
+  top: 0 !important;
+}
+
+.open .icon:before,
+.open .icon:after {
+  content: "";
+  transition: @duration;
+}
+
+/* Minus */
+.navicon.open { transform: scale(@toggle-factor); }
+
+/* Arrows */
+.navicon.open.larr .icon,
+.navicon.open.rarr .icon,
+.navicon.open.uarr .icon {
+  &:before, &:after {
+    width: 1rem;
+  }
+
+  &:before { transform: rotate(35deg); transform-origin: left top; }
+  &:after { transform: rotate(-35deg); transform-origin: left bottom; }
+}
+.navicon.open.uarr { transform: scale(@toggle-factor) rotate(90deg); }
+
+/* Arrows */
+.navicon.open.rarr .icon {
+  &:before { transform: translate3d(0.5rem,0,0) rotate(-35deg); transform-origin: right top; }
+  &:after { transform: translate3d(0.5rem,0,0) rotate(35deg); transform-origin: right bottom; }
+}
+
+/* × and + */
+.navicon.open.plus,
+.navicon.open.x {
+  .icon {
+    background: transparent;
+
+    &:before { transform: rotate(-45deg); }
+    &:after { transform: rotate(45deg); }
+  }
+}
+.navicon.open.plus {
+  transform: scale(@toggle-factor) rotate(45deg)
+}

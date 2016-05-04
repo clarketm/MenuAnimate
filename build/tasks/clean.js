@@ -10,6 +10,10 @@ gulp.task('clean-scss', ['clean-css'], function () {
     return del([paths.outputScss]);
 });
 
+gulp.task('clean-less', ['clean-css'], function () {
+    return del([paths.outputLess]);
+});
+
 gulp.task('clean-css', function () {
     return del([paths.outputCss, paths.outputSrcCss]);
 });

@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     del = require('del'),
     sass = require('gulp-sass'),
+    less = require('gulp-less'),
     css = require('gulp-uglifycss'),
     js = require('gulp-uglify');
 
@@ -30,7 +31,16 @@ gulp.task('build-scss', ['clean-scss'], function () {
         .pipe(gulp.dest(paths.outputSrcCss))
 });
 
-gulp.task('build-css', ['build-scss'], function () {
+gulp.task('build-less', ['clean-less'], function () {
+    gulp.src(paths.lessVar)
+        .pipe(changed(paths.outputLess, {extension: '.less'}))
+        .pipe(gulp.dest(paths.outputLess));
+    return gulp.src(paths.lessSrc)
+        .pipe(changed(paths.outputLess, {extension: '.less'}))
+        .pipe(gulp.dest(paths.outputLess))
+});
+
+gulp.task('build-css', ['build-scss', 'build-less'], function () {
     return gulp.src(paths.css)
         .pipe(changed(paths.outputCss, {extension: '.css'}))
         .pipe(gulp.dest(paths.outputCss))
