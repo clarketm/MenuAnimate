@@ -1,11 +1,11 @@
 [![Build Status](https://travis-ci.org/clarketm/MenuAnimate.svg?branch=master)](https://travis-ci.org/clarketm/MenuAnimate)
 # MenuAnimate
-Enhance your website with **six** stylish transformicons using SCSS and CSS.
+Enhance your website with **six** stylish transformicons using SCSS (or LESS) and CSS.
 
 ## Getting Started
 
 ### Download and Setup
-First, initialize your variable settings in the `variables.scss` file or simply use the defaults.
+First, initialize your variable settings in the `variables.scss` (or `variables.less`) file or simply use the defaults.
 
 ```sass
 /****** DEFAULTS ******/
@@ -32,7 +32,8 @@ $right: 15px;
 $bottom: auto;
 $left: auto;
 ```
-Next, transpile the `menu-animate.scss` to generate your css file and add the generated `menu-animate.css` file to the `<head>` of your html document.
+
+Next, transpile the `menu-animate.scss` (or `menu-animate.less`) to generate your css file and add the generated `menu-animate.css` file to the `<head>` of your html document.
 
 Lastly, add **one** of the following two scripts before the closing `<body>` of your html document.
 * `menu-animate.js` - *Vanilla JavaScript* 
