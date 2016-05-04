@@ -69,7 +69,7 @@ The plugin integrates seamlessly with the [Bootstrap](http://getbootstrap.com/) 
 Simply add `data-toggle="collapse"`, the `.navbar-toggle` class, and a `data-target` element to your markup.
 
 ```html
-<button class="navicon navbar-toggle" data-toggle="collapse" id="#navbar-target"></button>
+<button class="navicon navbar-toggle" data-toggle="collapse" data-target="#navbar-target"></button>
 
 <!--target-->
 <div id="navbar-target" class="navbar-collapse collapse">
