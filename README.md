@@ -11,6 +11,7 @@ First, initialize your variable settings in the `variables.scss` (or `variables.
 /****** DEFAULTS ******/
 
 /* sizes */
+$base: 100%;
 $width: 1.5em;
 $thickness: .3125em;
 $spacing: .525em;
