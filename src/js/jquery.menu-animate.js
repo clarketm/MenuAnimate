@@ -1,5 +1,5 @@
 /*!
- * MenuAnimate.scss v1.1.0 (http://www.clarketravis.com)
+ * MenuAnimate.scss v1.1.2 (http://www.clarketravis.com)
  * Copyright 2015 Travis Clarke
  * Licensed under the MIT license
  */
@@ -14,7 +14,6 @@
                 .append($.fn.menuAnimate.template)
                 .on("click", function(e) {
                     $(this).toggleClass($.fn.menuAnimate.toggledClass);
-                    return false;
                 });
         });
 

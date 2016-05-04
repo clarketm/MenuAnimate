@@ -1,6 +1,7 @@
 /****** DEFAULTS ******/
 
 // sizes
+$base: 100%;
 $width: 1.5em;
 $thickness: .3125em;
 $spacing: .525em;
@@ -17,7 +18,7 @@ $opacity: 0.8;
 $hover-opacity: 1;
 
 // position
-$top: 10px;
-$right: 15px;
+$top: auto;
+$right: 0;
 $bottom: auto;
 $left: auto;

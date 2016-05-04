@@ -1,22 +1,24 @@
 @charset "UTF-8";
 /*!
- * MenuAnimate.scss v1.1.0 (http://www.clarketravis.com)
+ * MenuAnimate.scss v1.1.2 (http://www.clarketravis.com)
  * Copyright 2015 Travis Clarke
  * Licensed under the MIT license
  */
 /****** DEFAULTS ******/
+html {
+  font-size: 100%; }
+
 .navicon, .navicon.line {
   font: inherit;
   font-size: 1rem;
-  display: inline-block;
   background: none;
   border: none;
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: auto;
+  right: 0;
   bottom: auto;
   left: auto;
-  padding: 0.75rem 0.25rem;
+  padding: 0.94rem 0.60rem;
   transition: 0.25s;
   z-index: 10;
   cursor: pointer;

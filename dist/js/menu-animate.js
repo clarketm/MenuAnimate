@@ -1,5 +1,5 @@
 /*!
- * MenuAnimate.scss v1.1.0 (http://www.clarketravis.com)
+ * MenuAnimate.scss v1.1.2 (http://www.clarketravis.com)
  * Copyright 2015 Travis Clarke
  * Licensed under the MIT license
  */
@@ -38,7 +38,7 @@ var MenuAnimate = (function (window, undefined) {
     //// EVENT HANDLER
         addHandler = function (el) {
             el.addEventListener("click", function (e) {
-                el.classList.toggle("open");
+                el.classList.toggle("collapsed");
             });
         };
 

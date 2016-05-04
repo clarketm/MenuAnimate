@@ -64,6 +64,19 @@ Add the following html to your webpage where you would like your icon to appear.
 
 ```
 
+### Bootstrap
+The plugin integrates seamlessly with the [Bootstrap](http://getbootstrap.com/) css framework and the Bootstrap [collapse.js](http://getbootstrap.com/javascript/#collapse) plugin. 
+Simply add `data-toggle="collapse"`, the `.navbar-toggle` class, and a `data-target` element to your markup.
+
+```html
+<button class="navicon navbar-toggle" data-toggle="collapse" id="#navbar-target></button>
+
+<!-- target -->
+<div id="navbar-target" class="navbar-collapse collapse">
+...
+</div>
+<!-- /target -->
+
 ### jQuery
 To use this plugin with jQuery, include both the [jQuery](https://jquery.com/) and `jquery.menu-animate.js` scripts, then simply call:
 
