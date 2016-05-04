@@ -138,6 +138,6 @@ Customize your icon by passing in one of the **six** icon type modifiers. Each i
 
 ### Live Demo 
 A live, interactive demo can be found here:
-##### [www.clarketravis.com](http://www.clarketravis.com/querytag/#transformicons)
+##### [www.clarketravis.com](http://www.clarketravis.com/querytag/#transformicons) and [Demos](http://www.clarketravis.com/menuanimate/)
 
 
