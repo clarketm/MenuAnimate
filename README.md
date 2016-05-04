@@ -76,6 +76,7 @@ Simply add `data-toggle="collapse"`, the `.navbar-toggle` class, and a `data-tar
 ...
 </div>
 <!-- /target -->
+```
 
 ### jQuery
 To use this plugin with jQuery, include both the [jQuery](https://jquery.com/) and `jquery.menu-animate.js` scripts, then simply call:
