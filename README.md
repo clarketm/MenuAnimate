@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/clarketm/MenuAnimate.svg?branch=master)](https://travis-ci.org/clarketm/MenuAnimate)
-# MenuAnimate
+# [MenuAnimate](http://www.clarketravis.com/querytag/#transformicons)
 Enhance your website with **six** stylish transformicons using SCSS (or LESS) and CSS.
 
 ## Getting Started
