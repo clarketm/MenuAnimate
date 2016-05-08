@@ -14,7 +14,9 @@
     "scss",
     "three-bars",
     "navicon",
-    "icon"
+    "icon",
+    "jquery-plugin",
+    "ecosystem:jquery"
   ],
   "dependencies": {
   },
