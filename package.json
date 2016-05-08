@@ -21,7 +21,9 @@
     "scss",
     "three-bars",
     "navicon",
-    "icon"
+    "icon",
+    "jquery-plugin",
+    "ecosystem:jquery"
   ],
   "author": "clarketm <travis.m.clarke@gmail.com>",
   "license": "MIT",
