@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/clarketm/MenuAnimate/issues"
   },
-  "homepage": "http://www.clarketravis.com",
+  "homepage": "https://www.travismclarke.com",
   "devDependencies": {
     "browser-sync": "^1.8.1",
     "conventional-changelog": "0.0.11",

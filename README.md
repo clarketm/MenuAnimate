@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/clarketm/MenuAnimate.svg?branch=master)](https://travis-ci.org/clarketm/MenuAnimate)
-# [MenuAnimate](http://www.clarketravis.com/querytag/#transformicons)
+# [MenuAnimate](https://www.travismclarke.com/querytag/#transformicons)
 Enhance your website with **six** stylish transformicons using SCSS (or LESS) and CSS.
 
 ## Getting Started
@@ -139,6 +139,6 @@ Customize your icon by passing in one of the **six** icon type modifiers. Each i
 
 ### Live Demo 
 A live, interactive demo can be found here:
-##### [www.clarketravis.com](http://www.clarketravis.com/querytag/#transformicons) and [Demos](http://www.clarketravis.com/menuanimate/)
+##### [Transformicons](https://www.travismclarke.com/querytag/#transformicons) and [Demos](https://www.travismclarke.com/menuanimate/)
 
 

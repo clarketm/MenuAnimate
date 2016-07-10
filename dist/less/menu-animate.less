@@ -1,5 +1,5 @@
 /*!
- * MenuAnimate.scss v1.1.2 (http://www.clarketravis.com)
+ * MenuAnimate.scss v1.1.2 (https://www.travismclarke.com)
  * Copyright 2015 Travis Clarke
  * Licensed under the MIT license
  */
