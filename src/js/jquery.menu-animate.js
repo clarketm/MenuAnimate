@@ -11,7 +11,7 @@
             $(this)
                 .addClass($.fn.menuAnimate.containerClass)
                 .addClass(icon || $.fn.menuAnimate.icon)
-                .append($.fn.menuAnimate.template)
+                .append($.fn.menuAnimate.template.clone())
                 .on("click", function(e) {
                     $(this).toggleClass($.fn.menuAnimate.toggledClass);
                 });
