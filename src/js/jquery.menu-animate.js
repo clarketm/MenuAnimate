@@ -1,6 +1,6 @@
 /*!
  * MenuAnimate.scss v1.1.2 (https://www.travismclarke.com)
- * Copyright 2015 Travis Clarke
+ * Copyright 2016 Travis Clarke
  * Licensed under the MIT license
  */
 ;(function(window, $, undefined) {
